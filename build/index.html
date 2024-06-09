@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="es" class="m-0 h-full">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Home Page - Tokyo Archive</title>
+    
+    <link rel="stylesheet" href="css/output.css" />
+
+    <script src="js/cards.js" defer></script>
+    <script src="js/menu.js" defer></script>
+
+    <script src="js/carrousel-homepage.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  </head>
+
+  <body class="bg-white_hp w-full">
+    <header class="flex items-center w-full h-[65px] bg-grey_2">
+        <img class="w-[168px] h-[42px] ml-[3%] mr-[2%]" src="img/header/logotype.webp"/>
+        <nav class="flex">
+          <a href="html/manga.html" class="font-[lato] font-black text-[16px] text-white_hp text-center flex flex-col justify-center w-[80px] h-[65px] bg-grey_2 no-underline transition duration-[0.4s] ease hover:bg-pink_hp mqW6:hidden">Manga</a>
+          <a href="html/anime.html" class="font-[lato] font-black text-[16px] text-white_hp text-center flex flex-col justify-center w-[80px] h-[65px] bg-grey_2 no-underline transition duration-[0.4s] ease hover:bg-pink_hp mqW6:hidden">Anime</a>
+        </nav>
+        <article class="flex justify-end items-center w-full">
+          <nav class="flex items-center w-[262px] h-[42px] bg-white_hp rounded-[20px] border-solid border-grey_1 border-[1px] mqW3:w-[40px] mqW3:h-[40px] mqW5:hidden">
+            <img class="w-[25px] h-[25px] ml-1.5 mr-4" src="img/header/lupa.webp"/>
+            <input class="font-[lato] font-black text-[14px] text-grey_2 text-center border-solid border-grey_2 border-2 mt-px mqW3:hidden leading-[1.3]" type="text" placeholder="Search...">
+          </nav>
+          <a href="html/login.html" class="font-[lato] font-black text-[16px] text-white_hp text-center flex flex-col justify-center w-[80px] h-[65px] ml-5 bg-grey_2 no-underline transition duration-[0.4s] ease hover:bg-pink_hp mqW6:hidden mqW6:ml-0">Login</a>
+          <a href="html/register.html" class="font-[lato] font-black text-[16px] text-white_hp text-center flex flex-col justify-center w-[80px] h-[65px] mr-[4%] bg-grey_2 no-underline transition duration-[0.4s] ease hover:bg-pink_hp mqW6:hidden mqW6:mr-0">Sign Up</a>
+          <button id="menu" class="hidden mqW6:block border-solid border-pink_hp border-[3px] rounded w-[58px] h-[40px] mr-[38px] ml-[38px] -mt-[0.5%] text-white_hp bg-grey_2 leading-[0.9] mqW12:mr-5 mqW12:ml-5">
+            <i class="bi bi-list-task text-[26px] "></i>
+          </button>
+        </article>      
+    </header>
+      <nav id="menu_desplegable" class="absolute z-10 w-[30%] right-0 bg-grey_2 transition duration-[0.4s] ease translate-x-full mqW10:w-[45%]">
+        <ul>
+          <li class="w-full border-b-pink_hp border-solid border-b-[1px] ">
+            <a href="html/manga.html" class="box-content block text-right font-[lato] font-black text-[16px] text-white_hp leading-[3.5] transition duration-[0.4s] no-underline pr-[10%] hover:translate-x-[-10%]">Manga</a>
+          </li>
+          <li class="w-full border-b-pink_hp border-solid border-b-[1px]">
+            <a href="html/anime.html" class="box-content block text-right font-[lato] font-black text-[16px] text-white_hp leading-[3.5] transition duration-[0.4s] no-underline pr-[10%] hover:translate-x-[-10%]">Anime</a>
+          </li>
+          <li class="w-full border-b-pink_hp border-solid border-b-[1px] ">
+            <a href="html/login.html" class="box-content block text-right font-[lato] font-black text-[16px] text-white_hp leading-[3.5] transition duration-[0.4s] no-underline pr-[10%] hover:translate-x-[-10%]">Login</a>
+          </li>
+          <li class="w-full border-b-pink_hp border-solid border-b-[1px]">
+            <a href="html/register.html" class="box-content block text-right font-[lato] font-black text-[16px] text-white_hp leading-[3.5] transition duration-[0.4s] no-underline pr-[10%] hover:translate-x-[-10%]">Sign Up</a>
+          </li>
+        </ul>
+      </nav>
+
+    <section class="flex flex-col">
+      <article class="w-full h-[auto] relative z-[-1]">
+        <div class="flex carrousel-of-images">
+          <div class="block w-full">
+            <picture class="flex w-full"> 
+              <source type="image/webp" media="(max-width: 575px)" srcset="img/manga/banners/houseki_banner_movil.webp">
+              <source type="image/webp" media="(max-width: 1250px)" srcset="img/manga/banners/houseki_banner_tablet.webp">
+              <source type="image/webp" media="(max-width: 1920px)" srcset="img/manga/banners/houseki_banner.webp">
+              <img class="w-full" src="img/manga/banners/houseki_banner_2k.webp">
+            </picture>
+          </div>
+          <div class="hidden w-full">
+            <picture class="flex w-full"> 
+              <source type="image/webp" media="(max-width: 575px)" srcset="img/anime/movil/elite-movil.webp">
+              <source type="image/webp" media="(max-width: 1250px)" srcset="img/anime/pc-tablet/elite-recort-tablet.webp">
+              <source type="image/webp" media="(max-width: 1920px)" srcset="img/anime/pc-tablet/elite-recort.webp">
+              <img class="w-full" src="img/anime/pc-tablet/elite-recort-2k.webp">
+            </picture>
+          </div>
+          <div class="hidden w-full">
+            <picture class="flex w-full"> 
+              <source type="image/webp" media="(max-width: 575px)" srcset="img/anime/movil/jujus-movil.webp">
+              <source type="image/webp" media="(max-width: 1250px)" srcset="img/anime/pc-tablet/jujus-recort-tablet.webp">
+              <source type="image/webp" media="(max-width: 1920px)" srcset="img/anime/pc-tablet/jujus-recort.webp">
+              <img class="w-full" src="img/anime/pc-tablet/jujus-recort-2k.webp">
+            </picture>
+          </div>
+          <div class="hidden w-full">
+            <picture class="flex w-full"> 
+              <source type="image/webp" media="(max-width: 575px)" srcset="img/manga/banners/oshi_no_ko_banner_movil.webp">
+              <source type="image/webp" media="(max-width: 1250px)" srcset="img/manga/banners/oshi_no_ko_banner_tablet.webp">
+              <source type="image/webp" media="(max-width: 1920px)" srcset="img/manga/banners/oshi_no_ko_banner.webp">
+              <img class="w-full" src="img/manga/banners/oshi_no_ko_banner_2k.webp">
+            </picture>
+          </div>
+          <div class="hidden w-full">
+            <picture class="flex w-full"> 
+              <source type="image/webp" media="(max-width: 575px)" srcset="img/manga/banners/one_piece_banner_movil.webp">
+              <source type="image/webp" media="(max-width: 1250px)" srcset="img/manga/banners/one_piece_banner_tablet.webp">
+              <source type="image/webp" media="(max-width: 1920px)" srcset="img/manga/banners/one_piece_banner.webp">
+              <img class="w-full" src="img/manga/banners/one_piece_banner_2k.webp">
+            </picture>
+          </div>
+          <div class="hidden w-full">
+            <picture class="flex w-full"> 
+              <source type="image/webp" media="(max-width: 575px)" srcset="img/anime/movil/exorcist-movil.webp">
+              <source type="image/webp" media="(max-width: 1250px)" srcset="img/anime/pc-tablet/exorcist-recort-tablet.webp">
+              <source type="image/webp" media="(max-width: 1920px)" srcset="img/anime/pc-tablet/exorcist-recort.webp">
+              <img class="w-full" src="img/anime/pc-tablet/exorcist-recort-2k.webp">
+            </picture>
+          </div>
+        </div>
+      </article>
+
+      <article class="flex flex-col w-[90%] absolute z-0 
+                      mqW12:items-center mqW12:w-full mqW12:h-[auto]">
+        <h1 class="font-[arvo] font-bold text-[55px] text-grey_3 leading-[50px] -tracking-[0.5px] mt-[3.334%] ml-[5.556%] mb-[0.5%]
+                   mqW2:text-[50px] mqW2:leading-[36px] mqW2:ml-[6.5%]
+                   mqW9:text-[45px] mqW9:ml-[7%]
+                   mqW11:mt-[2.334%] mqW11:text-[40px]
+                   mqW12:text-[45px] mqW12:mt-[2%] mqW12:ml-[2%] mqW12:mb-[68%] mqW12:self-start mqW12:bg-black_hp mqW12:p-[3%]
+                   mqW13:text-[40px] mqW13:mb-[64%]">
+          Popular
+        </h1>
+
+        <div class="flex flex-col items-center justify-center w-[40%] ml-[3%] rounded-[39px] bg-gradient-to-white 
+                    mqW9:rounded-[20px]
+                    mqW12:justify-end mqW12:w-full mqW12:h-full mqW12:bg-none mqW12:rounded-none mqW12:ml-0">
+          <aside class="flex items-center carrousel-of-titles">
+            <div class="block">
+              <picture class="flex justify-center w-full pt-[4%] pb-[4%]"> 
+                <source type="image/webp" media="(max-width: 575px)" srcset="img/manga/titles/plantilla_manga.webp">
+                <img class="w-[55%] mqW12:w-[85%]" src="img/manga/titles/houseki_title.webp">
+              </picture>
+            </div>
+            <div class="hidden">
+              <picture class="flex justify-center w-full pt-[4%] pb-[4%]"> 
+                <source type="image/webp" media="(max-width: 575px)" srcset="img/anime/titulos/elite-titulo-movil.webp">
+                <img class="w-[55%] mqW12:w-[85%]" src="img/anime/titulos/elite-title.webp">
+              </picture>
+            </div>
+            <div class="hidden">
+              <picture class="flex justify-center w-full pt-[4%] pb-[4%]"> 
+                <source type="image/webp" media="(max-width: 575px)" srcset="img/anime/titulos/jujus-titulo-movil.webp">
+                <img class="w-[55%] mqW12:w-[85%]" src="img/anime/titulos/jujus-title.webp">
+              </picture>
+            </div>
+            <div class="hidden">
+              <picture class="flex justify-center w-full pt-[4%] pb-[4%]"> 
+                <source type="image/webp" media="(max-width: 575px)" srcset="img/manga/titles/plantilla_manga.webp">
+                <img class="w-[55%] mqW12:w-[85%]" src="img/manga/titles/oshi_no_ko_title.webp">
+              </picture>
+            </div>
+            <div class="hidden">
+              <picture class="flex justify-center w-full pt-[4%] pb-[4%]"> 
+                <source type="image/webp" media="(max-width: 575px)" srcset="img/manga/titles/plantilla_manga.webp">
+                <img class="w-[55%] mqW12:w-[85%]" src="img/manga/titles/one_piece_title.webp">
+              </picture>
+            </div>
+            <div class="hidden">
+              <picture class="flex justify-center w-full pt-[4%] pb-[4%]"> 
+                <source type="image/webp" media="(max-width: 575px)" srcset="img/anime/titulos/exorcist-titulo-movil.webp">
+                <img class="w-[55%] mqW12:w-[85%]" src="img/anime/titulos/exorcist-title.webp">
+              </picture>
+            </div>
+          </aside>
+
+          <div class="flex justify-center w-[84%] pb-[2%] carrousel-of-belonging">
+            <div class="block">
+              <p class="font-[lato] font-black text-[16px] text-grey_2 -tracking-[0.16px] leading-[1] mqW9:text-[10px] mqW12:hidden">
+                Esta obra se califica o pertenece a la Categoría Manga
+              </p>
+            </div>
+            <div class="hidden">
+              <p class="font-[lato] font-black text-[16px] text-grey_2 -tracking-[0.16px] leading-[1] mqW9:text-[10px] mqW12:hidden">
+                Esta obra se califica o pertenece a la Categoría Anime
+              </p>
+            </div>
+            <div class="hidden">
+              <p class="font-[lato] font-black text-[16px] text-grey_2 -tracking-[0.16px] leading-[1] mqW9:text-[10px] mqW12:hidden">
+                Esta obra se califica o pertenece a la Categoría Anime
+              </p>
+            </div>
+            <div class="hidden">
+              <p class="font-[lato] font-black text-[16px] text-grey_2 -tracking-[0.16px] leading-[1] mqW9:text-[10px] mqW12:hidden">
+                Esta obra se califica o pertenece a la Categoría Manga
+              </p>
+            </div>
+            <div class="hidden">
+              <p class="font-[lato] font-black text-[16px] text-grey_2 -tracking-[0.16px] leading-[1] mqW9:text-[10px] mqW12:hidden">
+                Esta obra se califica o pertenece a la Categoría Manga
+              </p>
+            </div>
+            <div class="hidden">
+              <p class="font-[lato] font-black text-[16px] text-grey_2 -tracking-[0.16px] leading-[1] mqW9:text-[10px] mqW12:hidden">
+                Esta obra se califica o pertenece a la Categoría Anime
+              </p>
+            </div>
+          </div>
+
+          <aside class="flex justify-center w-[84%] pb-[2%] carrousel-of-descriptions">
+            <div class="block">
+              <p class="text-center mqW1:hidden
+                        font-[lato] font-normal text-[16px] text-grey_2 -tracking-[0.16px] leading-[25.6px]">
+              En un mundo habitado por formas de vida cristalinas llamadas The Lustrous, cada 
+              gema única debe luchar por su forma de vida contra la amenaza de los lunarianos 
+              que las convertirían en decoraciones. La fosfofilita, la gema más frágil y 
+              quebradiza, anhela unirse a la batalla con ...
+            </p>
+            </div>
+            <div class="hidden">
+              <p class="text-center mqW1:hidden
+                        font-[lato] font-normal text-[16px] text-grey_2 -tracking-[0.16px] leading-[25.6px]">
+                Kiyotaka Ayanokouji es un estudiante de la clase D, que es donde la escuela deja 
+                a sus estudiantes "inferiores" para ridiculizarlos. Por cierta razón, Kiyotaka fue 
+                descuidado en su examen de ingreso y fue puesto en la clase D. Después de conocer 
+                a Suzune Horikita y Kikyou Kushida vio lo...
+              </p>
+            </div>
+            <div class="hidden">
+              <p class="text-center mqW1:hidden
+                        font-[lato] font-normal text-[16px] text-grey_2 -tracking-[0.16px] leading-[25.6px]">
+                Penurias, arrepentimiento, vergüenza: los sentimientos negativos que sentimos 
+                los humanos se convierten en maldiciones que acechan en nuestra vida cotidiana. 
+                Las Maldiciones corren desenfrenadas por todo el mundo y son capaces de llevar a 
+                las personas a terribles desgracias a su v...
+              </p>
+            </div>
+            <div class="hidden">
+              <p class="text-center mqW1:hidden
+                        font-[lato] font-normal text-[16px] text-grey_2 -tracking-[0.16px] leading-[25.6px]">
+                Gorou es un ginecólogo y fanático de los ídolos que está en shock después de que su 
+                estrella favorita, Ai, anuncia una pausa improvisada. ¡Gorou no se da cuenta de que 
+                está a punto de forjar un vínculo con ella que desafía todo sentido común! 
+                ¡Pero las mentiras son el arma de una ídolo!
+              </p>
+            </div>
+            <div class="hidden">
+              <p class="text-center mqW1:hidden
+                        font-[lato] font-normal text-[16px] text-grey_2 -tracking-[0.16px] leading-[25.6px]">
+                Gold Roger era conocido como el Rey Pirata, el ser más fuerte e infame que había 
+                navegado por Grand Line. La captura y muerte de Roger por el Gobierno Mundial trajo 
+                un cambio en todo el mundo. Sus últimas palabras antes de su muerte revelaron la 
+                ubicación del mayor tesoro del mundo...
+              </p>
+            </div>
+            <div class="hidden">
+              <p class="text-center mqW1:hidden
+                        font-[lato] font-normal text-[16px] text-grey_2 -tracking-[0.16px] leading-[25.6px]">
+                Este mundo consta de dos dimensiones unidas como una sola, como un espejo. El primero 
+                es el mundo en el que viven los humanos, Assiah. El otro es el mundo de los demonios, 
+                Gehenna. Normalmente, los viajes entre los dos y, de hecho, cualquier tipo de contacto
+                entre los dos, es imposible...
+              </p>
+            </div>
+          </aside>
+
+          <div class="flex justify-center items-center w-[90%] h-[4%] bg-pink_hp rounded-[12px] carrousel-of-starting">
+            <img class="flex h-[90%] mqW12:w-[7%]" src="img/anime/recursos/polygon.svg">
+
+            <div class="block pt-[3%] pb-[3%]">
+              <button class="font-[lato] font-bold text-[16px] text-black_hp -tracking-[0.16px] leading-[25.6px] bg-pink_hp border-solid pl-1 pr-1">
+                COMENZAR A <b>LEER</b>
+              </button>
+            </div>
+            <div class="hidden">
+              <button class="font-[lato] font-bold text-[16px] text-black_hp -tracking-[0.16px] leading-[25.6px] bg-pink_hp border-solid pl-1 pr-1">
+                COMENZAR A <b>VER</b>
+              </button>
+            </div>
+            <div class="hidden">
+              <button class="font-[lato] font-bold text-[16px] text-black_hp -tracking-[0.16px] leading-[25.6px] bg-pink_hp border-solid pl-1 pr-1">
+                COMENZAR A <b>VER</b>
+              </button>
+            </div>
+            <div class="hidden">
+              <button class="font-[lato] font-bold text-[16px] text-black_hp -tracking-[0.16px] leading-[25.6px] bg-pink_hp border-solid pl-1 pr-1">
+                COMENZAR A <b>LEER</b>
+              </button>
+            </div>
+            <div class="hidden">
+              <button class="font-[lato] font-bold text-[16px] text-black_hp -tracking-[0.16px] leading-[25.6px] bg-pink_hp border-solid pl-1 pr-1">
+                COMENZAR A <b>LEER</b>
+              </button>
+            </div>
+            <div class="hidden">
+              <button class="font-[lato] font-bold text-[16px] text-black_hp -tracking-[0.16px] leading-[25.6px] bg-pink_hp border-solid pl-1 pr-1">
+                COMENZAR A <b>VER</b>
+              </button>
+            </div>
+          </div>
+
+          <aside class="justify-self-start items-end w-[85%] mt-[1.8%] mb-[5%] leading-[1]
+                        mqW12:flex mqW12:justify-center mqW12:w-full buttons-of-carrousel">
+              <button class="w-[66px] h-[16px] bg-pink_hp rounded-[14.5px] border-solid mr-[1%]"></button>
+              <button class="w-[24px] h-[16px] bg-grey_3 rounded-[14.5px] border-solid mr-[1%]"></button>
+              <button class="w-[24px] h-[16px] bg-grey_3 rounded-[14.5px] border-solid mr-[1%]"></button>
+              <button class="w-[24px] h-[16px] bg-grey_3 rounded-[14.5px] border-solid mr-[1%]"></button>
+              <button class="w-[24px] h-[16px] bg-grey_3 rounded-[14.5px] border-solid mr-[1%]"></button>
+              <button class="w-[24px] h-[16px] bg-grey_3 rounded-[14.5px] border-solid mr-[1%]"></button>
+          </aside>
+        </div>
+      </article>  
+    </section>
+
+    <section class="flex flex-col items-center relative mt-[2%]">
+      <div class="flex items-start justify-between -mb-[0.5%] w-[1550px] mqW20:w-[95%] mqW9:mb-[-1%]">
+        <h2 class="font-[arvo] font-normal text-[42px] text-grey_2 -tracking-[0.5px] leading-[40px]
+                   mqW2:text-[34px] mqW2:leading-[34px]
+                   mqW9:text-[32px] mqW9:leading-[32px]
+                   mqW13:text-[30px]">
+          New Mangas
+        </h2>
+        <div class="flex items-center">
+          <div id="flecha_izq" class="text-grey_2 arrowManga">
+            <i class="bi bi-arrow-left-circle-fill leading-[0.8] text-[55px] mqW2:text-[45px] mqW13:text-[40px]"></i>
+          </div>
+
+          <div class="w-[10px] h-[20px] bg-white_hp ml-[3%] mr-[3%]"></div>
+
+          <div id="flecha-der" class="text-grey_2 arrowManga">
+            <i class="bi bi-arrow-right-circle-fill leading-[0.8] text-[55px]  mqW2:text-[45px] mqW13:text-[40px]"></i>
+          </div>
+        </div>
+      </div>
+
+      <ul class="grid grid-flow-col auto-cols-column-5 mqW3:auto-cols-column-4 mqW8:auto-cols-column-3 mqW12:auto-cols-column-2
+                 overflow-x-auto snap-mandatory scroll-smooth scrollbar-none w-[1550px] bg-black_hp rounded-[10px] 
+                 mqW20:w-[95%]
+                 frame-manga">
+        <li class="snap-start list-none p-[12%] mqW12:pr-[4%] cards">
+          <img class="w-full mqW12:w-[110%]" src="img/manga/new titles/spyxfamily.webp"/>
+          <p class="text-center font-[lato] font-normal text-[16px] text-white_hp -tracking-[0.16px] leading-[20.6px] whitespace-nowrap -mb-[10%] mt-[4%]
+                    mqW12:hidden">
+            SPY x FAMILY
+          </p>
+        </li>
+        <li class="snap-start list-none p-[12%] mqW12:pr-[4%] cards">
+          <img class="w-full mqW12:w-[110%]" src="img/manga/new titles/frieren-manga.webp"/>
+          <p class="text-center font-[lato] font-normal text-[16px] text-white_hp -tracking-[0.16px] leading-[20.6px] whitespace-nowrap -mb-[10%] mt-[4%]
+                    mqW12:hidden">
+            Sousou No Frieren
+          </p>
+        </li>
+        <li class="snap-start list-none p-[12%] mqW12:pr-[4%] cards">
+          <img class="w-full mqW12:w-[110%]" src="img/manga/new titles/jujus-manga.webp"/>
+          <p class="text-center font-[lato] font-normal text-[16px] text-white_hp -tracking-[0.16px] leading-[20.6px] whitespace-nowrap -mb-[10%] mt-[4%]
+                    mqW12:hidden">
+            Jujutsu Kaisen
+          </p>
+        </li>
+        <li class="snap-start list-none p-[12%] mqW12:pr-[4%] cards">
+          <img class="w-full mqW12:w-[110%]" src="img/manga/new titles/ruirui-manga.webp"/>
+          <p class="text-center font-[lato] font-normal text-[16px] text-white_hp -tracking-[0.16px] leading-[20.6px] whitespace-nowrap -mb-[10%] mt-[4%]
+                    mqW12:hidden">
+            Ruirui Senki
+          </p>
+        </li>
+        <li class="snap-start list-none p-[12%] mqW12:pr-[4%] cards">
+          <img class="w-full mqW12:w-[110%]" src="img/manga/new titles/apothecary.webp"/>
+          <p class="text-center font-[lato] font-normal text-[16px] text-white_hp -tracking-[0.16px] leading-[20.6px] whitespace-nowrap -mb-[10%] mt-[4%]
+                    mqW12:hidden">
+            Apothecary Diaries
+          </p>
+        </li>
+        <li class="snap-start list-none p-[12%] mqW12:pr-[4%] cards">
+          <img class="w-full mqW12:w-[110%]" src="img/manga/new titles/last-tour-manga.webp"/>
+          <p class="text-center font-[lato] font-normal text-[16px] text-white_hp -tracking-[0.16px] leading-[20.6px] whitespace-nowrap -mb-[10.5%] mt-[4%]
+                    mqW12:hidden">
+            Girls’ Last Tour
+          </p>
+        </li>
+      </ul>
+
+    </section>
+
+    <section class="flex flex-col items-center relative mt-[2%]">
+      <div class="flex items-start justify-between -mb-[0.5%] w-[1550px] mqW20:w-[95%] mqW9:mb-[-1%]">
+        <h2 class="font-[arvo] font-normal text-[42px] text-grey_2 -tracking-[0.5px] leading-[40px]
+                   mqW2:text-[34px] mqW2:leading-[34px]
+                   mqW9:text-[32px] mqW9:leading-[32px]
+                   mqW13:text-[30px]">
+          New Animes
+        </h2>
+        <div class="flex items-center">
+          <div id="flecha_izq" class="text-grey_2 arrowAnime">
+            <i class="bi bi-arrow-left-circle-fill leading-[0.8] text-[55px] mqW2:text-[45px] mqW13:text-[40px]"></i>
+          </div>
+
+          <div class="w-[10px] h-[20px] bg-white_hp ml-[3%] mr-[3%]"></div>
+
+          <div id="flecha-der" class="text-grey_2 arrowAnime">
+            <i class="bi bi-arrow-right-circle-fill leading-[0.8] text-[55px]  mqW2:text-[45px] mqW13:text-[40px]"></i>
+          </div>
+        </div>
+      </div>
+      
+      <ul class="grid grid-flow-col auto-cols-column-5 mqW3:auto-cols-column-4 mqW8:auto-cols-column-3 mqW12:auto-cols-column-2
+                 overflow-x-auto snap-mandatory scroll-smooth scrollbar-none w-[1550px] bg-black_hp rounded-[10px] 
+                 mqW20:w-[95%]
+                 frame-anime">
+        <li class="snap-start list-none p-[12%] mqW12:pr-[4%] cards">
+          <img class="w-full mqW12:w-[110%]" src="img/anime/carrousel/spy_low.webp"/>
+          <p class="text-center font-[lato] font-normal text-[16px] text-white_hp -tracking-[0.16px] leading-[20.6px] whitespace-nowrap -mb-[10%] mt-[4%]
+                    mqW12:hidden">
+            SPY x FAMILY
+          </p>
+        </li>
+        <li class="snap-start list-none p-[12%] mqW12:pr-[4%] cards">
+          <img class="w-full mqW12:w-[110%]" src="img/anime/carrousel/buddy_low.webp"/>
+          <p class="text-center font-[lato] font-normal text-[16px] text-white_hp -tracking-[0.16px] leading-[20.6px] whitespace-nowrap -mb-[10%] mt-[4%]
+                    mqW12:hidden">
+            Buddy Daddies
+          </p>
+        </li>
+        <li class="snap-start list-none p-[12%] mqW12:pr-[4%] cards">
+          <img class="w-full mqW12:w-[110%]" src="img/anime/carrousel/chainsaw_low.webp"/>
+          <p class="text-center font-[lato] font-normal text-[16px] text-white_hp -tracking-[0.16px] leading-[20.6px] whitespace-nowrap -mb-[10%] mt-[4%]
+                    mqW12:hidden">
+            Chainsaw Man
+          </p>
+        </li>
+        <li class="snap-start list-none p-[12%] mqW12:pr-[4%] cards">
+          <img class="w-full mqW12:w-[110%]" src="img/anime/carrousel/fairy_low.webp"/>
+          <p class="text-center font-[lato] font-normal text-[16px] text-white_hp -tracking-[0.16px] leading-[20.6px] whitespace-nowrap -mb-[10%] mt-[4%]
+                    mqW12:hidden">
+            Fairy Tail - F.S.
+          </p>
+        </li>
+        <li class="snap-start list-none p-[12%] mqW12:pr-[4%] cards">
+          <img class="w-full mqW12:w-[110%]" src="img/anime/carrousel/gintama_low.webp"/>
+          <p class="text-center font-[lato] font-normal text-[16px] text-white_hp -tracking-[0.16px] leading-[20.6px] whitespace-nowrap -mb-[10%] mt-[4%]
+                    mqW12:hidden">
+            Gintama
+          </p>
+        </li>
+        <li class="snap-start list-none p-[12%] mqW12:pr-[4%] cards">
+          <img class="w-full mqW12:w-[110%]" src="img/anime/carrousel/naruto_low.webp"/>
+          <p class="text-center font-[lato] font-normal text-[16px] text-white_hp -tracking-[0.16px] leading-[20.6px] whitespace-nowrap -mb-[10%] mt-[4%]
+                    mqW12:hidden">
+            Naruto
+          </p>
+        </li>
+        
+      </ul>
+
+    </section>
+
+    <footer class="mt-[3%] p-[70px] bg-black_hp">
+      <article>
+        <aside class="flex flex-wrap">
+          <div class="w-[25%] mqW9:w-[50%] mqW9:mb-[30px] mqW12:w-full">
+            <h4 class="font-[lato] font-medium text-[18px] text-white_hp capitalize mb-[35px] relative leading-[1]
+                       before:content-[attr(before)] before:absolute before:left-0 before:bottom-[-10px] before:bg-pink_hp before:w-[50px] before:h-[2px] before:box-border"
+                before=" ">
+              About Us
+            </h4>
+            <p class="mb-[10px] mr-[20%] font-[lato] text-[16px] font-light text-white_hp leading-[1]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris placerat fringilla accumsan. 
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae
+            </p>
+          </div>
+          <div class="w-[25%] mqW9:w-[50%] mqW9:mb-[30px] mqW12:w-full">
+            <h4 class="font-[lato] font-medium text-[18px] text-white_hp capitalize mb-[35px] relative leading-[1]
+                       before:content-[attr(before)] before:absolute before:left-0 before:bottom-[-10px] before:bg-pink_hp before:w-[50px] before:h-[2px] before:box-border"
+                before=" ">
+              Company
+            </h4>
+            <ul class="list-none">
+              <li class="mb-[10px] leading-[1]">
+                <a class="font-[lato] text-[16px] font-light text-grey_3 capitalize no-underline transition-all duration-[0.3s] ease hover:text-white_hp hover:pl-2" 
+                   href="#">
+                  privacy policy
+                </a>
+              </li>
+              <li class="leading-[1]">
+                <a class="font-[lato] text-[16px] font-light text-grey_3 capitalize no-underline transition-all duration-[0.3s] ease hover:text-white_hp hover:pl-2" 
+                   href="#">
+                  affiliate program
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-[25%] mqW9:w-[50%] mqW9:mb-[30px] mqW12:w-full">
+            <h4 class="font-[lato] font-medium text-[18px] text-white_hp capitalize mb-[35px] relative leading-[1]
+                       before:content-[attr(before)] before:absolute before:left-0 before:bottom-[-10px] before:bg-pink_hp before:w-[50px] before:h-[2px] before:box-border"
+                before=" ">
+              Our Services
+            </h4>
+            <ul>
+              <li class="mb-[10px] leading-[1]">
+                <a class="font-[lato] text-[16px] font-light text-grey_3 capitalize no-underline transition-all duration-[0.3s] ease hover:text-white_hp hover:pl-2"
+                   href="html/anime.html" >
+                  Anime
+                </a>
+              </li>
+              <li class="leading-[1]">
+                <a class="font-[lato] text-[16px] font-light text-grey_3 capitalize no-underline transition-all duration-[0.3s] ease hover:text-white_hp hover:pl-2"
+                   href="html/manga.html">
+                  Manga
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-[25%] mqW9:w-[50%] mqW9:mb-[30px] mqW12:w-full">
+            <h4 class="font-[lato] font-medium text-[18px] text-white_hp capitalize mb-[35px] relative leading-[1]
+                       before:content-[attr(before)] before:absolute before:left-0 before:bottom-[-10px] before:bg-pink_hp before:w-[50px] before:h-[2px] before:box-border"
+                before=" ">
+              Follow Us
+            </h4>
+            <div class="text-white_hp">
+              <a class="inline-block text-center w-[40px] h-[40px] bg-grey_2 rounded-[50%] mr-[10px] mb-[10px] leading-[40px] text-white_hp transition-all duration-[0.5s] ease
+                        hover:text-grey_2 hover:bg-white_hp leading-[1]" 
+                 href="#">
+                <i class="bi bi-facebook">
+                  <p class="text-[0px]">Facebook</p>
+                </i>
+              </a>
+              <a class="inline-block text-center w-[40px] h-[40px] bg-grey_2 rounded-[50%] mr-[10px] mb-[10px] leading-[40px] text-white_hp transition-all duration-[0.5s] ease
+                        hover:text-grey_2 hover:bg-white_hp leading-[1]" 
+                 href="#">
+                <i class="bi bi-twitter">
+                  <p class="text-[0px]">Twitter</p>
+                </i>
+              </a>
+              <a class="inline-block text-center w-[40px] h-[40px] bg-grey_2 rounded-[50%] mr-[10px] mb-[10px] leading-[40px] text-white_hp transition-all duration-[0.5s] ease
+                        hover:text-grey_2 hover:bg-white_hp leading-[1]" 
+                 href="#">
+                <i class="bi bi-instagram">
+                  <p class="text-[0px]">Instagram</p>
+                </i>
+              </a>
+            </div>
+          </div>
+          <div class="flex flex-col items-center w-full mt-[3%]">
+            <p class="font-[lato] text-[16px] font-light text-white_hp leading-[1]">
+              Copyright © Tokyo Archive All Rights Reserved.
+            </p>
+            <p class="font-[lato] text-[16px] font-light text-white_hp leading-[1]">
+              Powered by DAW.
+            </p>
+          </div>
+        </aside>
+      </article>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "tailwindcss-homepage",
+  "version": "1.0.0",
+  "description": "My HomePage with TailWindCSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Antonio Jesús",
+  "license": "ISC",
+  "browsers": [
+    ">5%",
+    "last 6 versions",
+    "ie>=9",
+    "not dead"
+  ],
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  }
+}
