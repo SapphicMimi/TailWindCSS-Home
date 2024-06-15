@@ -11,6 +11,9 @@
     <script src="js/cards.js" defer></script>
     <script src="js/menu.js" defer></script>
 
+    <!-- Scripts de FlowBite -->
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+
     <script src="js/carrousel-homepage.js" defer></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
@@ -435,10 +438,85 @@
             Naruto
           </p>
         </li>
-        
       </ul>
-
     </section>
+
+    <!-- Complemento de Tailwind UI: Testimonio -->
+
+    <section class="relative isolate overflow-hidden bg-white_hp px-6 py-24 sm:py-32 lg:px-8">
+      <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"></div>
+      <div class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
+      <div class="mx-auto max-w-2xl lg:max-w-4xl">
+        <img class="mx-auto h-12" src="https://tailwindui.com/img/logos/workcation-logo-indigo-600.svg" alt="">
+        <figure class="mt-10">
+          <blockquote class="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
+            <p>“Descubrir Tokyo Archivo ha sido una de las mejores cosas que me han pasado como fan del anime y el manga. La variedad de animes disponibles es impresionante, desde los clásicos que me llevan a mi infancia hasta las series más recientes. La calidad de los videos y la rapidez con la que suben nuevos episodios es inigualable.”</p>
+            <br>
+            <p>“Además, la sección de manga es fantástica. Siempre encuentro algo nuevo y emocionante para leer, y la interfaz es tan fácil de usar que puedo sumergirme en las historias sin ninguna interrupción.”</p>
+          </blockquote>
+          <figcaption class="mt-10">
+            <img class="mx-auto h-10 w-10 rounded-full" src="img/complement/pablo.webp" alt="">
+            <div class="mt-4 flex items-center justify-center space-x-3 text-base">
+              <div class="font-semibold text-gray-900">Pablo Martinez Sanchez</div>
+              <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-gray-900">
+                <circle cx="1" cy="1" r="1" />
+              </svg>
+              <div class="text-gray-600">CEO of Analog Devices</div>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Fin del Complemento -->
+
+    <!-- Complemento de Flowbite: Acordeon -->
+
+    <div id="accordion-collapse" data-accordion="collapse" class="ml-16 mr-16 bg-white_hp">
+      <h2 id="accordion-collapse-heading-1">
+        <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+          <span>¿Que es Tokyo Archive?</span>
+          <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+          </svg>
+        </button>
+      </h2>
+      <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+        <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">Bienvenido a Tokyo Archive, tu portal definitivo para disfrutar del apasionante mundo del anime y el manga. Somos una plataforma dedicada a ofrecerte la mejor experiencia en la visualización de anime y la lectura de manga, donde la calidad y la comodidad son nuestra prioridad.</p>
+        </div>
+      </div>
+      <h2 id="accordion-collapse-heading-2">
+        <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+          <span>Nuestra Misión</span>
+          <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+          </svg>
+        </button>
+      </h2>
+      <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+        <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">En Tokyo Archive, creemos que el anime y el manga no son solo formas de entretenimiento, sino también un arte que conecta a personas de todas partes del mundo. Nuestra misión es proporcionar a los aficionados de todos los niveles un lugar donde puedan explorar, disfrutar y compartir sus obras favoritas de manera sencilla y accesible.</p>
+        </div>
+      </div>
+      <h2 id="accordion-collapse-heading-3">
+        <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+          <span>¿Qué Ofrecemos?</span>
+          <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
+          </svg>
+        </button>
+      </h2>
+      <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+        <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+          <p class="mb-2 text-gray-500 dark:text-gray-400">Visualización de Anime: Accede a una amplia biblioteca de animes, desde los clásicos que marcaron época hasta los estrenos más recientes. Disfruta de tus series favoritas en alta calidad y con subtítulos en tu idioma preferido.</p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">Lectura de Manga: Explora una extensa colección de mangas, desde los más populares hasta los tesoros ocultos. Lee online y descubre nuevas historias cada día.</p>
+          <p class="mb-2 text-gray-500 dark:text-gray-400">Control de Obras Visualizadas: Regístrate e inicia sesión para llevar un registro personalizado de las series y mangas que has visto y leído. Crea listas, marca tus favoritos y recibe recomendaciones basadas en tus gustos.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fin del Complemento -->
 
     <footer class="mt-[3%] p-[70px] bg-black_hp">
       <article>

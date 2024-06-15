@@ -2,7 +2,10 @@
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
-  content: ["./build/*.html"],
+  content: [
+    "./build/*.html",
+    "/node_modules/flowbite/**/*.js"
+  ],
   theme: {
     extend: {
       spacing: {
@@ -57,6 +60,7 @@ module.exports = {
     }
   },
   plugins: [
+    // Plugin para poder utilizar la propiedad de scrollbar-width: none.
     plugin(function ({ addUtilities }) {
       addUtilities({
         '.scrollbar-none': {
@@ -66,7 +70,8 @@ module.exports = {
           },
         }
       })
-    })
+    }),
+    require('flowbite/plugin')
   ],
 }
 
